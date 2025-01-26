@@ -178,17 +178,37 @@
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
 \end{knitrout}
-\caption{A caption...}
+\caption{Customized Collatz Conjecture}
 \label{CollatzPlot3}
 \end{center}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % QUESTION 1f
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item Make another plot using the tutorial -- feel free to be creative here! 
-  Note that I leave creating the R chunk and figure environment to you here. 
+  \item Make another plot using the tutorial -- feel free to be creative here!
+  Note that I leave creating the R chunk and figure environment to you here.
   Make sure that your code is well-formatted and your plot is appropriately scaled.\\
   \textbf{Solution:}
+\begin{knitrout}\scriptsize
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlopt{?}\hldef{canvas_collatz}
+\hlkwd{set.seed}\hldef{(}\hlnum{1234}\hldef{)}
+\hlkwd{canvas_collatz}\hldef{(}\hlkwc{colors} \hldef{=} \hlkwd{colorPalette}\hldef{(}\hlsng{"dark2"}\hldef{),} \hlkwc{background} \hldef{=} \hlsng{"#f2f2f2"}\hldef{,} \hlkwc{strands} \hldef{=} \hlnum{100}\hldef{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\begin{figure}[H]
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
+\end{knitrout}
+\caption{Creative Collatz Conjecture}
+\label{CreativeCollatz}
+\end{center}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % QUESTION 1g
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -196,7 +216,15 @@
   package and use \verb|\citep{}| to add a parenthetical citation to the end of
   the sentence below.
 \textbf{Solution:} We created the generative art in Question 1 using the \texttt{aRtsy}
-package for \texttt{R}.
+package for \texttt{R}. \verb|\citep{@Manual{,
+    title = {aRtsy: Generative Art with 'ggplot2'},
+    author = {Koen Derks},
+    year = {2024},
+    note = {R package version 1.0.0},
+    url = {https://CRAN.R-project.org/package=aRtsy},
+    doi = {10.32614/CRAN.package.aRtsy},
+  }}|
+
 \end{enumerate}
 
 \newpage

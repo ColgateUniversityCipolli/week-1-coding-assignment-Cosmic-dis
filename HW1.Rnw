@@ -44,6 +44,7 @@ install.packages("aRtsy")
 % Note here I have removed eval=FALSE so this code will run
 <<size="scriptsize", warning=FALSE, message=FALSE>>=
 library("aRtsy")
+
 @
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % QUESTION 1c
@@ -111,17 +112,32 @@ canvas_collatz(colors = colorPalette("vrolik4"), background = "#dbdbdb", strands
 <<echo=FALSE,fig.dim=c(4,4)>>=
 canvas_collatz(colors = colorPalette("vrolik4"))
 @
-\caption{A caption...}
+\caption{Customized Collatz Conjecture}
 \label{CollatzPlot3}
 \end{center}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % QUESTION 1f
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item Make another plot using the tutorial -- feel free to be creative here! 
-  Note that I leave creating the R chunk and figure environment to you here. 
+  \item Make another plot using the tutorial -- feel free to be creative here!
+  Note that I leave creating the R chunk and figure environment to you here.
   Make sure that your code is well-formatted and your plot is appropriately scaled.\\
   \textbf{Solution:}
+<<CreativePlot, eval=FALSE, size="scriptsize", warning=FALSE, message=FALSE>>=
+?canvas_collatz
+set.seed(1234)
+canvas_collatz(colors = colorPalette("dark2"), background = "#f2f2f2", strands = 100)
+@
+\begin{figure}[H]
+\begin{center}
+<<echo=FALSE,fig.dim=c(4,4)>>=
+canvas_collatz(colors = colorPalette("dark2"))
+@
+\caption{Creative Collatz Conjecture}
+\label{CreativeCollatz}
+\end{center}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % QUESTION 1g
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,7 +145,15 @@ canvas_collatz(colors = colorPalette("vrolik4"))
   package and use \verb|\citep{}| to add a parenthetical citation to the end of
   the sentence below.
 \textbf{Solution:} We created the generative art in Question 1 using the \texttt{aRtsy}
-package for \texttt{R}.
+package for \texttt{R}. \verb|\citep{@Manual{,
+    title = {aRtsy: Generative Art with 'ggplot2'},
+    author = {Koen Derks},
+    year = {2024},
+    note = {R package version 1.0.0},
+    url = {https://CRAN.R-project.org/package=aRtsy},
+    doi = {10.32614/CRAN.package.aRtsy},
+  }}|
+
 \end{enumerate}
 
 \newpage
