@@ -253,7 +253,7 @@ package for \texttt{R}. \verb|\cite{aRtsy}|
 \begin{knitrout}\scriptsize
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hldef{result} \hlkwb{<-} \hlnum{2}\hlopt{^}\hldef{(values}\hlopt{+}\hlnum{1}\hldef{)} \hlopt{+} \hlnum{2}\hlopt{^}\hldef{(values}\hlopt{-}\hlnum{1}\hldef{)}
+\hldef{result} \hlkwb{=} \hlnum{2}\hlopt{^}\hldef{(values}\hlopt{+}\hlnum{1}\hldef{)} \hlopt{+} \hlnum{2}\hlopt{^}\hldef{(values}\hlopt{-}\hlnum{1}\hldef{)}
 \hldef{result}
 \end{alltt}
 \begin{verbatim}
@@ -271,7 +271,8 @@ package for \texttt{R}. \verb|\cite{aRtsy}|
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlopt{?}\hlkwd{which}\hldef{()}
-\hlkwd{which}\hldef{(result}\hlopt{==}\hlnum{40}\hldef{)}
+\hldef{solution} \hlkwb{=} \hlkwd{which}\hldef{(result}\hlopt{==}\hlnum{40}\hldef{)}
+\hldef{solution}
 \end{alltt}
 \begin{verbatim}
 ## [1] 5
@@ -283,6 +284,7 @@ package for \texttt{R}. \verb|\cite{aRtsy}|
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item What is the solution? That is, what value of x yields $2^{x+1} +2^{x-1} = 40$?\\
 \textbf{Solution:}
+THhe solution is $x = 4$
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % QUESTION 2e
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
