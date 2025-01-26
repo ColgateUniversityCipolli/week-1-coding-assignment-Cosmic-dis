@@ -250,11 +250,34 @@ package for \texttt{R}. \verb|\cite{aRtsy}|
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Complete the algebra to compute $2^{x+1} +2^{x-1}$ for each value in the numerical vector created in step 1. Make sure to save the result to a new numeric vector.\\
 \textbf{Solution:}
+\begin{knitrout}\scriptsize
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hldef{result} \hlkwb{<-} \hlnum{2}\hlopt{^}\hldef{(values}\hlopt{+}\hlnum{1}\hldef{)} \hlopt{+} \hlnum{2}\hlopt{^}\hldef{(values}\hlopt{-}\hlnum{1}\hldef{)}
+\hldef{result}
+\end{alltt}
+\begin{verbatim}
+##  [1]    2.5    5.0   10.0   20.0   40.0   80.0  160.0  320.0  640.0 1280.0
+## [11] 2560.0
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % QUESTION 2c
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Use the which() function to ask which result is 40.\\
 \textbf{Solution:}
+\begin{knitrout}\scriptsize
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlopt{?}\hlkwd{which}\hldef{()}
+\hlkwd{which}\hldef{(result}\hlopt{==}\hlnum{40}\hldef{)}
+\end{alltt}
+\begin{verbatim}
+## [1] 5
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % QUESTION 2d
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
