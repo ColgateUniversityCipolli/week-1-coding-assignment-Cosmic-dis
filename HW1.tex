@@ -192,7 +192,6 @@
 \begin{knitrout}\scriptsize
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlopt{?}\hldef{canvas_collatz}
 \hlkwd{set.seed}\hldef{(}\hlnum{1234}\hldef{)}
 \hlkwd{canvas_collatz}\hldef{(}\hlkwc{colors} \hldef{=} \hlkwd{colorPalette}\hldef{(}\hlsng{"dark2"}\hldef{),} \hlkwc{background} \hldef{=} \hlsng{"#f2f2f2"}\hldef{,} \hlkwc{strands} \hldef{=} \hlnum{100}\hldef{)}
 \end{alltt}
@@ -216,7 +215,7 @@
   package and use \verb|\citep{}| to add a parenthetical citation to the end of
   the sentence below.
 \textbf{Solution:} We created the generative art in Question 1 using the \texttt{aRtsy}
-package for \texttt{R}. \verb|\cite{aRtsy}|
+package for \texttt{R}. \verb|\citep{aRtsy}|
 
 \end{enumerate}
 
@@ -284,12 +283,14 @@ package for \texttt{R}. \verb|\cite{aRtsy}|
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item What is the solution? That is, what value of x yields $2^{x+1} +2^{x-1} = 40$?\\
 \textbf{Solution:}
-THhe solution is $x = 4$
+The solution is $x = 4$
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % QUESTION 2e
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Explain why this approach wouldn't work for something like $3^{x+2} + 5 (3^x) = 84$ where the solution is $x \approx 1.6309$.\\
 \textbf{Solution:}
+This approach wouldn't work because the solution is not an integer and the   numeric vector contains only integers.
+
 \end{enumerate}
 \end{enumerate}
 

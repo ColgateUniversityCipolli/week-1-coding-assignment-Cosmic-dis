@@ -124,7 +124,6 @@ canvas_collatz(colors = colorPalette("vrolik4"))
   Make sure that your code is well-formatted and your plot is appropriately scaled.\\
   \textbf{Solution:}
 <<CreativePlot, eval=FALSE, size="scriptsize", warning=FALSE, message=FALSE>>=
-?canvas_collatz
 set.seed(1234)
 canvas_collatz(colors = colorPalette("dark2"), background = "#f2f2f2", strands = 100)
 @
@@ -145,7 +144,7 @@ canvas_collatz(colors = colorPalette("dark2"))
   package and use \verb|\citep{}| to add a parenthetical citation to the end of
   the sentence below.
 \textbf{Solution:} We created the generative art in Question 1 using the \texttt{aRtsy}
-package for \texttt{R}. \verb|\cite{aRtsy}|
+package for \texttt{R}. \verb|\citep{aRtsy}|
 
 \end{enumerate}
 
@@ -163,7 +162,7 @@ package for \texttt{R}. \verb|\cite{aRtsy}|
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Create a numeric vector containing the integers from 0 to 10 inclusive. Hint -- the solution to this problem is one of these values.\\
 \textbf{Solution:}
-<<Numericvector, size="scriptsize">>=
+<<size="scriptsize">>=
 values = 0:10
 values
 @
@@ -172,7 +171,7 @@ values
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Complete the algebra to compute $2^{x+1} +2^{x-1}$ for each value in the numerical vector created in step 1. Make sure to save the result to a new numeric vector.\\
 \textbf{Solution:}
-<<Algebravector, size="scriptsize">>=
+<<size="scriptsize">>=
 result = 2^(values+1) + 2^(values-1)
 result
 @
@@ -191,12 +190,14 @@ solution
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item What is the solution? That is, what value of x yields $2^{x+1} +2^{x-1} = 40$?\\
 \textbf{Solution:}
-THhe solution is $x = 4$
+The solution is $x = 4$
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % QUESTION 2e
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Explain why this approach wouldn't work for something like $3^{x+2} + 5 (3^x) = 84$ where the solution is $x \approx 1.6309$.\\
 \textbf{Solution:}
+This approach wouldn't work because the solution is not an integer and the   numeric vector contains only integers.
+
 \end{enumerate}
 \end{enumerate}
 
