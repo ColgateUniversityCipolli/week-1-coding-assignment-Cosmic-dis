@@ -145,14 +145,7 @@ canvas_collatz(colors = colorPalette("dark2"))
   package and use \verb|\citep{}| to add a parenthetical citation to the end of
   the sentence below.
 \textbf{Solution:} We created the generative art in Question 1 using the \texttt{aRtsy}
-package for \texttt{R}. \verb|\citep{@Manual{,
-    title = {aRtsy: Generative Art with 'ggplot2'},
-    author = {Koen Derks},
-    year = {2024},
-    note = {R package version 1.0.0},
-    url = {https://CRAN.R-project.org/package=aRtsy},
-    doi = {10.32614/CRAN.package.aRtsy},
-  }}|
+package for \texttt{R}. \verb|\cite{aRtsy}|
 
 \end{enumerate}
 
@@ -170,6 +163,10 @@ package for \texttt{R}. \verb|\citep{@Manual{,
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Create a numeric vector containing the integers from 0 to 10 inclusive. Hint -- the solution to this problem is one of these values.\\
 \textbf{Solution:}
+<<Numericvector, size="scriptsize", warning=FALSE, message=FALSE>>=
+values = 0:10
+values
+@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % QUESTION 2b
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
